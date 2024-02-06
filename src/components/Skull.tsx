@@ -2,7 +2,7 @@ import { OrbitControls } from "@react-three/drei";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { useRef } from "react";
 import { Object3D } from "three";
-import { GLTFLoader } from "three/addons/loaders/GLTFLoader";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 
 export const Skull = () => {
   const gltf = useLoader(GLTFLoader, "/Skull.glb");
