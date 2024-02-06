@@ -1,9 +1,10 @@
 import "./App.css";
+import { SkullLoader } from "./components/SkullLoader";
 
 function App() {
   return (
     <div>
-      <p>pirated technologies enterprises ltd. inc.</p>
+      <SkullLoader />
     </div>
   );
 }
