@@ -14,8 +14,8 @@ export const Skull = () => {
 
   useFrame(({ pointer, viewport }) => {
     if (meshRef.current) {
-      const x = pointer.x * viewport.width;
-      const y = pointer.y * viewport.height;
+      const x = pointer.x * viewport.width * 2;
+      const y = pointer.y * viewport.height * 1.75;
       targetPos.current.set(x, y, 1);
       rotMatrix.current.lookAt(
         targetPos.current,
